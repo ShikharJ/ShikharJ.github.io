@@ -68,8 +68,8 @@
      </font>
      <script>
      emailScramble = new scrambledString(document.getElementById('email'),
-          'emailScramble', 't-s.tfosorcim@lawsiajcom',
-          [20,2,7,21,1,19,18,17,16,15,14,13,24,11,10,9,8,3,6,5,4,22,23,12]);
+          'emailScramble', 'a7missaimjiwaolrg8kchhla.@',
+          [2,16,19,3,4,8,6,10,26,1,21,5,13,25,7,14,18,15,11,24,9,12,22,20,23,17]);
      </script>
   </p>
 
@@ -93,41 +93,53 @@
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
-     <td width="33%" valign="top" align="center"><a href="pubs/ooddiskann.pdf" target="_blank"><img src="images/under_review.png" alt="OODDISKANN" width="100%" style="border-radius:15px"></a>
+     <td width="33%" valign="top" align="center"><a href="pubs/ooddiskann.pdf" target="_blank"><img src="images/ooddiskann.png" alt="OODDISKANN" width="100%" style="border-radius:15px"></a>
      <td width="67%" valign="top">
         <p><a href="pubs/ooddiskann.pdf" target="_blank" id="ooddiskann">
-        <heading>OOD-DiskANN: Robust Billion-Scale Graph ANNS for Out-of-Distribution Queries </heading></a><br>
-        <strong>Shikhar Jaiswal</strong>, <a href="https://www.microsoft.com/en-us/research/people/rakri/" target="_blank">Ravishankar Krishnaswamy</a>, <a href="https://www.microsoft.com/en-us/research/people/garga/" target="_blank">Ankit Garg</a>, <a href="https://www.microsoft.com/en-us/research/people/harshasi/" target="_blank">Harsha Vardhan Simhadri</a> <br>
-        Under Review, 2022<br>
+        <heading>OOD-DiskANN: Efficient and Scalable Graph ANNS for Out-of-Distribution Queries </heading></a><br>
+        <strong>Shikhar Jaiswal</strong>, <a href="https://www.microsoft.com/en-us/research/people/rakri/" target="_blank">Ravishankar Krishnaswamy</a>, <a href="https://www.microsoft.com/en-us/research/people/garga/" target="_blank">Ankit Garg</a>, <a href="https://www.microsoft.com/en-us/research/people/harshasi/" target="_blank">Harsha Vardhan Simhadri</a>, <a href="https://www.linkedin.com/in/sheshansh-agrawal-b5a79b97/" target="_blank">Sheshansh Agrawal</a> <br>
+        Under Submission at ACM Web Conference (<strong>WWW</strong>), 2023<br>
         </p>
 
-        <!-- <div class="paper" id="pal">
-        <a href="javascript:toggleblock('palabs')">abstract</a> / 
-        <a href="https://arxiv.org/pdf/2010.15947.pdf" target="_blank">paper</a>
+        <div class="paper" id="ooddiskann">
+        <a href="javascript:toggleblock('ooddiskannabs')">abstract</a> / 
+        <a href="pubs/ooddiskann.pdf" target="_blank">paper</a>
         <br>
 
-        <p align="justify"> <i id="palabs">The goal of active learning algorithms is to judiciously select subsets of unlabeled samples to be labeled by an oracle, in order to reduce the time and cost associated with supervised learning. Previously, active learning techniques for deep neural networks have used the same network for the task at hand (e.g., classification) as well as sample selection,  which  can  be  conflicting  goals.   To  address  this issue,  we  use  a  separate  sample  scoring  network  to  capture the relevant information about the distribution of the labeled samples,  and use it to assess the novelty of unlabeled samples.  Specifically, we propose to efficiently train the scoring network using a self-supervised learning (pre-text)  task  on  the  labeled  samples.    To  make  the  scoring network more robust, we added to it another head, which is trained using the supervised (task) objective itself.  The scoring network was paired with a scoring function that allows an appropriate trade-off between the two heads.  We also ensure that the selected samples are diverse by selectively fine-tuning the scoring network in sub-rounds of each query round.  The resulting scheme performs competitively with the state-of-the-art on benchmark datasets.  More importantly, in realistic scenarios when some labels are erroneous and new classes are introduced on the fly, the performance of the proposed method remains strong.</i></p> -->
+        <p align="justify"> <i id="ooddiskannabs">State-of-the-art algorithms for Approximate Nearest Neighbor Search (ANNS) such as DiskANN, FAISS, and HNSW build data dependent indices that offer substantially better accuracy and search efficiency over data-agnostic indices by overfitting to the index data distribution. When the query data is drawn from a different distribution, for example when index represents image embeddings and query represents textual embeddings, such algorithms lose much of this performance advantage. On a variety of datasets, for a fixed recall target, latency is worse by an order of magnitude or more for Out-Of-Distribution (OOD) queries as compared to In-Distribution (ID) queries. The question we address in this work is whether ANNS algorithms can be made efficient for OOD queries if the index construction is given access to a small sample set of these queries. We answer positively by presenting OOD-DiskANN, which uses a sparing sample (1% of index set size) of OOD queries, and provides up to 40% improvement in mean query latency over SoTA algorithms of a similar memory footprint. OOD-DiskANN is scalable and has the efficiency of graph-based ANNS indices. Some of our contributions can improve query efficiency for ID queries as well.</i></p>
 
   </tr>
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
-     <td width="33%" valign="top" align="center"><a href="pubs/minun.pdf" target="_blank"><img src="images/minun-overview.png" alt="MINUN" width="100%" style="border-radius:15px"></a>
+     <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2210.16556" target="_blank"><img src="images/minun-overview.png" alt="MINUN" width="100%" style="border-radius:15px"></a>
      <td width="67%" valign="top">
-        <p><a href="pubs/minun.pdf" target="_blank" id="minun">
+        <p><a href="https://arxiv.org/abs/2210.16556" target="_blank" id="minun">
         <heading>MinUn: Accurate ML Inference on Microcontrollers</heading></a><br>
-        <strong>Shikhar Jaiswal</strong>*, <a href="https://krantikiran68.github.io" target="_blank">Rahul Kranti Kiran Goli</a>*, Aayan Kumar, <a href="https://www.microsoft.com/en-us/research/people/visesha/" target="_blank">Vivek Seshadri</a>, <a href="https://www.microsoft.com/en-us/research/people/rahsha/" target="_blank">Rahul Sharma</a> <br>
-        Under Review, 2022<br>
+        <strong>Shikhar Jaiswal</strong>*, <a href="https://krantikiran68.github.io" target="_blank">Rahul Kranti Kiran Goli</a>*, <a href="https://www.linkedin.com/in/aayan-kumar-a40969100/" target="_blank">Aayan Kumar</a>, <a href="https://www.microsoft.com/en-us/research/people/visesha/" target="_blank">Vivek Seshadri</a>, <a href="https://www.microsoft.com/en-us/research/people/rahsha/" target="_blank">Rahul Sharma</a> <br>
+        Under Submission at Machine Learning and Systems (<strong>MLSys</strong>), 2023<br>
         </p>
 
-        <!-- <div class="paper" id="pal">
-        <a href="javascript:toggleblock('palabs')">abstract</a> / 
-        <a href="https://arxiv.org/pdf/2010.15947.pdf" target="_blank">paper</a>
+        <div class="paper" id="minun">
+        <a href="javascript:toggleblock('minunabs')">abstract</a> / 
+        <a shape="rect" href="javascript:togglebib('minun')" class="togglebib">bibtex</a> / 
+        <a href="https://arxiv.org/abs/2210.16556" target="_blank">paper</a>
         <br>
 
-        <p align="justify"> <i id="palabs">The goal of active learning algorithms is to judiciously select subsets of unlabeled samples to be labeled by an oracle, in order to reduce the time and cost associated with supervised learning. Previously, active learning techniques for deep neural networks have used the same network for the task at hand (e.g., classification) as well as sample selection,  which  can  be  conflicting  goals.   To  address  this issue,  we  use  a  separate  sample  scoring  network  to  capture the relevant information about the distribution of the labeled samples,  and use it to assess the novelty of unlabeled samples.  Specifically, we propose to efficiently train the scoring network using a self-supervised learning (pre-text)  task  on  the  labeled  samples.    To  make  the  scoring network more robust, we added to it another head, which is trained using the supervised (task) objective itself.  The scoring network was paired with a scoring function that allows an appropriate trade-off between the two heads.  We also ensure that the selected samples are diverse by selectively fine-tuning the scoring network in sub-rounds of each query round.  The resulting scheme performs competitively with the state-of-the-art on benchmark datasets.  More importantly, in realistic scenarios when some labels are erroneous and new classes are introduced on the fly, the performance of the proposed method remains strong.</i></p> -->
+        <p align="justify"> <i id="minunabs">Running machine learning inference on tiny devices, known as TinyML, is an emerging research area. This task requires generating inference code that uses memory frugally, a task that standard ML frameworks are ill-suited for. A deployment framework for TinyML must be a) parametric in the number representation to take advantage of the emerging representations like posits, b) carefully assign high-precision to a few tensors so that most tensors can be kept in low-precision while still maintaining model accuracy, and c) avoid memory fragmentation. We describe MinUn, the first TinyML framework that holistically addresses these issues to generate efficient code for ARM microcontrollers (e.g., Arduino Uno, Due and STM32H747) that outperforms the prior TinyML frameworks.</i></p>
 
+<pre xml:space="preserve">
+@misc{https://doi.org/10.48550/arxiv.2210.16556,
+  doi = {10.48550/ARXIV.2210.16556},
+  url = {https://arxiv.org/abs/2210.16556},
+  author = {Jaiswal, Shikhar and Goli, Rahul Kiran Kranti and Kumar, Aayan and Seshadri, Vivek and Sharma, Rahul},
+  keywords = {Machine Learning (cs.LG), Programming Languages (cs.PL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {MinUn: Accurate ML Inference on Microcontrollers},
+  publisher = {arXiv},
+  year = {2022}, 
+  copyright = {Creative Commons Attribution 4.0 International}
+}</pre>
   </tr>
 </table>
 
@@ -169,6 +181,7 @@
 
         <div class="paper" id="smarte">
         <a href="javascript:toggleblock('smarteabs')">abstract</a> /
+        <a shape="rect" href="javascript:togglebib('smarte')" class="togglebib">bibtex</a> /
         <a href="https://educationaldatamining.org/EDM2021/virtual/static/pdf/EDM21_paper_29.pdf" target="_blank">paper</a> /
         <a href="https://www.youtube.com/watch?v=335u9BB4Paw" target="_blank">video</a> /
         <a href="pubs/smarte_ppt.pdf" target="_blank">presentation</a>
@@ -176,6 +189,15 @@
 
         <p align="justify"> <i id="smarteabs">Engaged and disengaged behaviors have been studied across a variety of educational contexts. However, tools to analyze engagement typically require custom-coding and calibration for a system. This limits engagement detection to systems where experts are available to study patterns and build detectors. This work studies a new approach to classify engagement patterns without expert input, by using a play persona methodology where labeled archetype data is generated by novice testers acting out different engagement patterns in a system. Domain-agnostic task features (e.g., response time to an activity, scores / correctness, task difficulty) are extracted from standardized data logs for both archetype and authentic user sessions. A semi-supervised methodology was used to label engagement; bottom-up clusters were combined with archetype data to build a classifier. This approach was analyzed with a focus on cold-start performance on small samples, using two metrics: consistency with larger full-sample cluster assignments and stability of points staying in the same cluster once assigned. These were compared against a baseline of clustering without an incrementally trained classifier. Findings on a data set from a branching multiple-choice scenario-based tutoring system indicated that approximately 52 unlabeled samples and 51 play-test labeled samples were sufficient to classify holdout sessions at 85% consistency with a full set of 145 unsupervised samples. Use-cases and limitations of this approach are also discussed.</p>
 
+<pre xml:space="preserve">
+@article{nyeacting,
+  title={Acting Engaged: Leveraging Play Persona Archetypes for Semi-Supervised Classification of Engagement},
+  author={Nye, Benjamin D and Core, Mark G and Jaiswal, Shikhar and Ghosal, Aviroop and Auerbach, Daniel},
+  url={https://educationaldatamining.org/EDM2021/virtual/poster_paper29.html},
+  booktitle = {Proceedings of the 14th International Conference on Educational Data Mining (EDM)},
+  pages = {240--251},
+  year = {2021}
+}</pre>
   </tr>
 
 </table>
