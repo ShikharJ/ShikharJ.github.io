@@ -93,9 +93,9 @@
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
-     <td width="33%" valign="top" align="center"><a href="pubs/ooddiskann.pdf" target="_blank"><img src="images/ooddiskann.png" alt="OODDISKANN" width="100%" style="border-radius:15px"></a>
+     <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/2211.12850" target="_blank"><img src="images/ooddiskann.png" alt="OODDISKANN" width="100%" style="border-radius:15px"></a>
      <td width="67%" valign="top">
-        <p><a href="pubs/ooddiskann.pdf" target="_blank">
+        <p><a href="https://arxiv.org/abs/2211.12850" target="_blank">
         <heading>OOD-DiskANN: Efficient and Scalable Graph ANNS for Out-of-Distribution Queries</heading></a><br>
         <strong>Shikhar Jaiswal</strong>, <a href="https://www.microsoft.com/en-us/research/people/rakri/" target="_blank">Ravishankar Krishnaswamy</a>, <a href="https://www.microsoft.com/en-us/research/people/garga/" target="_blank">Ankit Garg</a>, <a href="https://www.microsoft.com/en-us/research/people/harshasi/" target="_blank">Harsha Vardhan Simhadri</a>, <a href="https://www.linkedin.com/in/sheshansh-agrawal-b5a79b97/" target="_blank">Sheshansh Agrawal</a> <br>
         Under Submission at ACM Web Conference (<strong>WWW</strong>), 2023<br>
@@ -103,11 +103,31 @@
 
         <div class="paper" id="ooddiskann">
         <a href="javascript:toggleblock('ooddiskannabs')">abstract</a> / 
-        <a href="pubs/ooddiskann.pdf" target="_blank">paper</a>
+        <a shape="rect" href="javascript:togglebib('ooddiskann')" class="togglebib">bibtex</a> / 
+        <a href="https://arxiv.org/abs/2211.12850" target="_blank">paper</a>
         <br>
 
         <p align="justify"> <i id="ooddiskannabs">State-of-the-art algorithms for Approximate Nearest Neighbor Search (ANNS) such as DiskANN, FAISS, and HNSW build data dependent indices that offer substantially better accuracy and search efficiency over data-agnostic indices by overfitting to the index data distribution. When the query data is drawn from a different distribution, for example when index represents image embeddings and query represents textual embeddings, such algorithms lose much of this performance advantage. On a variety of datasets, for a fixed recall target, latency is worse by an order of magnitude or more for Out-Of-Distribution (OOD) queries as compared to In-Distribution (ID) queries. The question we address in this work is whether ANNS algorithms can be made efficient for OOD queries if the index construction is given access to a small sample set of these queries. We answer positively by presenting OOD-DiskANN, which uses a sparing sample (1% of index set size) of OOD queries, and provides up to 40% improvement in mean query latency over SoTA algorithms of a similar memory footprint. OOD-DiskANN is scalable and has the efficiency of graph-based ANNS indices. Some of our contributions can improve query efficiency for ID queries as well.</i></p>
 
+<pre xml:space="preserve">
+@misc{https://doi.org/10.48550/arxiv.2211.12850,
+    doi = {10.48550/ARXIV.2211.12850},
+    url = {https://arxiv.org/abs/2211.12850},
+    author = {Jaiswal, Shikhar and Krishnaswamy,
+      Ravishankar and Garg, Ankit and Simhadri,
+      Harsha Vardhan and Agrawal, Sheshansh},
+    keywords = {Machine Learning (cs.LG), Information
+      Retrieval (cs.IR), FOS: Computer and information
+      sciences, FOS: Computer and information sciences},
+    title = {OOD-DiskANN: Efficient and Scalable Graph
+      ANNS for Out-of-Distribution Queries},
+    publisher = {arXiv},
+    year = {2022},
+    copyright = {Creative Commons Attribution 4.0
+      International}
+}</pre>
+        </div>
+      </td>
   </tr>
 </table>
 
